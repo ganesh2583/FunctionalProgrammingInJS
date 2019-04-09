@@ -6,7 +6,7 @@ let isOddNumber = value => {
   console.log(`${value} is an odd number`);
 };
 
-let actualFunction = (value, evenCallback, oddCallback) => {
+let evenOddService = (value, evenCallback, oddCallback) => {
   return new Promise((resolve, reject) => {
     if (value % 2 === 0) {
       resolve(() => evenCallback(value));
@@ -20,14 +20,14 @@ let actualFunction = (value, evenCallback, oddCallback) => {
 };
 
 console.log("This prints first");
-actualFunction(2, isEvenNumber, isOddNumber)
+evenOddService(2, isEvenNumber, isOddNumber)
   .then(res => {
     res();
   })
   .catch(err => {
     console.log("err", err);
   });
-actualFunction(3, isEvenNumber, isOddNumber)
+evenOddService(3, isEvenNumber, isOddNumber)
   .then(res => {
     res();
   })
