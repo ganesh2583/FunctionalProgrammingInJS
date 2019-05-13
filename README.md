@@ -7,3 +7,4 @@ This repo has examples on how to create a Array in JS and basic fucntionalites i
 - Usage of Filters to filter the array based on a property of the JSON object inside the array.
 - Usage of map to use the elements inside the array and modify them and store in a new array. 
 - Usage of reduct to find sum of all the values inside an array. 
+- Usage of Currying in a Filter example
